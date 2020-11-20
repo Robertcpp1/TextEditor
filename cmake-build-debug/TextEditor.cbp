@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/dmitriy/projects/TextEditor/Menu/MainMenu.cpp">
+			<Option target="TextEditor"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/projects/TextEditor/Menu/MainMenu.h">
+			<Option target="TextEditor"/>
+		</Unit>
 		<Unit filename="/home/dmitriy/projects/TextEditor/main.cpp">
 			<Option target="TextEditor"/>
 		</Unit>

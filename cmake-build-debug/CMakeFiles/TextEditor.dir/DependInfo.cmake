@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/dmitriy/projects/TextEditor/Menu/MainMenu.cpp" "/home/dmitriy/projects/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/Menu/MainMenu.cpp.o"
   "/home/dmitriy/projects/TextEditor/main.cpp" "/home/dmitriy/projects/TextEditor/cmake-build-debug/CMakeFiles/TextEditor.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

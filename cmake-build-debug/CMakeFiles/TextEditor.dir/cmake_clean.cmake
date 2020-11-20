@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TextEditor.dir/Menu/MainMenu.cpp.o"
   "CMakeFiles/TextEditor.dir/main.cpp.o"
   "TextEditor"
   "TextEditor.pdb"
