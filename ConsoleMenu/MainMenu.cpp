@@ -36,6 +36,10 @@ namespace CMDMENU {
         }
         return true;
     }
+
+    int ConsoleMenu::getEnterUser() {
+        return m_enterUser;
+    }
 }
 
 
