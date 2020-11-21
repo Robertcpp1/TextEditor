@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TextEditor.dir/Menu/MainMenu.cpp.o"
+  "CMakeFiles/TextEditor.dir/ConsoleMenu/MainMenu.cpp.o"
   "CMakeFiles/TextEditor.dir/main.cpp.o"
-  "TextEditor"
+  "TextEditor.exe"
   "TextEditor.pdb"
+  "libTextEditor.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
