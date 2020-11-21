@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dmitriy/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/sasha/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /home/dmitriy/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -E rm -f
+RM = /cygdrive/c/Users/sasha/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dmitriy/projects/TextEditor
+CMAKE_SOURCE_DIR = /cygdrive/d/projects/TextEditor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dmitriy/projects/TextEditor/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/d/projects/TextEditor/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/dmitriy/projects/TextEditor/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/dmitriy/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/sasha/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/dmitriy/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/sasha/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitriy/projects/TextEditor/cmake-build-debug/CMakeFiles /home/dmitriy/projects/TextEditor/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/projects/TextEditor/cmake-build-debug/CMakeFiles /cygdrive/d/projects/TextEditor/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitriy/projects/TextEditor/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/projects/TextEditor/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,32 +143,32 @@ TextEditor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/build
 .PHONY : TextEditor/fast
 
-Menu/MainMenu.o: Menu/MainMenu.cpp.o
+ConsoleMenu/MainMenu.o: ConsoleMenu/MainMenu.cpp.o
 
-.PHONY : Menu/MainMenu.o
+.PHONY : ConsoleMenu/MainMenu.o
 
 # target to build an object file
-Menu/MainMenu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Menu/MainMenu.cpp.o
-.PHONY : Menu/MainMenu.cpp.o
+ConsoleMenu/MainMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ConsoleMenu/MainMenu.cpp.o
+.PHONY : ConsoleMenu/MainMenu.cpp.o
 
-Menu/MainMenu.i: Menu/MainMenu.cpp.i
+ConsoleMenu/MainMenu.i: ConsoleMenu/MainMenu.cpp.i
 
-.PHONY : Menu/MainMenu.i
+.PHONY : ConsoleMenu/MainMenu.i
 
 # target to preprocess a source file
-Menu/MainMenu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Menu/MainMenu.cpp.i
-.PHONY : Menu/MainMenu.cpp.i
+ConsoleMenu/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ConsoleMenu/MainMenu.cpp.i
+.PHONY : ConsoleMenu/MainMenu.cpp.i
 
-Menu/MainMenu.s: Menu/MainMenu.cpp.s
+ConsoleMenu/MainMenu.s: ConsoleMenu/MainMenu.cpp.s
 
-.PHONY : Menu/MainMenu.s
+.PHONY : ConsoleMenu/MainMenu.s
 
 # target to generate assembly for a file
-Menu/MainMenu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/Menu/MainMenu.cpp.s
-.PHONY : Menu/MainMenu.cpp.s
+ConsoleMenu/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TextEditor.dir/build.make CMakeFiles/TextEditor.dir/ConsoleMenu/MainMenu.cpp.s
+.PHONY : ConsoleMenu/MainMenu.cpp.s
 
 main.o: main.cpp.o
 
@@ -206,9 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TextEditor"
-	@echo "... Menu/MainMenu.o"
-	@echo "... Menu/MainMenu.i"
-	@echo "... Menu/MainMenu.s"
+	@echo "... ConsoleMenu/MainMenu.o"
+	@echo "... ConsoleMenu/MainMenu.i"
+	@echo "... ConsoleMenu/MainMenu.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

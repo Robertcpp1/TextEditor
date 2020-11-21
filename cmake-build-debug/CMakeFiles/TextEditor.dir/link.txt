@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/TextEditor.dir/main.cpp.o CMakeFiles/TextEditor.dir/Menu/MainMenu.cpp.o  -o TextEditor 
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/TextEditor.dir/main.cpp.o CMakeFiles/TextEditor.dir/ConsoleMenu/MainMenu.cpp.o  -o TextEditor.exe -Wl,--out-implib,libTextEditor.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
