@@ -30,7 +30,7 @@ namespace CMDMENU {
             if (m_enterUser == 0)
                 check = false;
             else if (m_enterUser > 0 && m_enterUser <= m_count) {
-                check = m_itemsMenu[m_enterUser - 1];
+                check = m_itemsMenu[m_enterUser - 1]();
 
             }
         }
