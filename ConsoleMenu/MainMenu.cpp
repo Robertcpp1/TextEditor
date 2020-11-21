@@ -15,30 +15,28 @@ namespace CMDMENU {
     }
 
     bool ConsoleMenu::startLoop() {
+
         bool check = true;
 
         while (check == true) {
+
+            std::cout << "0. Exit" << "\n";
             for (int i = 0; i < m_count; ++i) {
-                std::cout << i + 1 << "." << "\n";
+                std::cout << i + 1 << ". " << m_itemStrMenu[i] << "\n";
 
             }
-            std::cout << "0-exit" << "\n";
+
             std::cin >> m_enterUser;
             if (m_enterUser == 0)
                 check = false;
             else if (m_enterUser > 0 && m_enterUser <= m_count) {
-                bool exitflag = m_itemsMenu[m_enterUser - 1];
-                if (exitflag != 0) {
-                    break;
-                }
+                check = m_itemsMenu[m_enterUser - 1];
+
             }
         }
+        return true;
     }
 }
 
-
-}
-
-#include "MainMenu.h"
 
 
